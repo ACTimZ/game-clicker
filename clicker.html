@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Clicker</title>
+</head>
+<body class="flex flex-col items-center justify-between h-[100vh]">
+    <aside class="grid grid-cols-3 self-stretch">
+        <button class="bg-indigo-100 py-5 cursor-pointer hover:bg-indigo-300 duration-150 hover:font-semibold">Скины</button>
+        <button class="bg-stone-100 py-5 cursor-pointer hover:bg-stone-300 duration-150 hover:font-semibold">Улучшения</button>
+        <button class="bg-amber-100 py-5 cursor-pointer hover:bg-amber-300 duration-150 hover:font-semibold">Магазин</button>
+    </aside>
+    <button class="btn-js py-3 px-5 rounded-xl bg-teal-500 text-white">
+        <article class="h-50 w-50 bg-teal-500"></article>
+    </button>
+    <article class="self-end flex flex-col items-center gap-3 border-l-2 border-t-2 border-gray-300 px-7 py-3">
+        <h2 class="text-2xl">Вы накликали:</h2>
+        <article class="flex flex-row gap-3 items-end text-3xl">
+            <p class="points-count font-bold"></p>
+            <p>кликов</p>
+        </article>
+    </article>
+    <!-- <section class="flex flex-col justify-between h-full items-center">
+    </section> -->
+    <dialog class="bg-black/50 w-[100%] h-[100%] z-100 absolute top-0 flex flex-row justify-center items-center" id="dialog_timer_clicker">
+        <span class="flex flex-col items-center gap-7.5 bg-white rounded-xl relative py-12 px-25">
+            <h2 class="text-3xl font-semibold">До следующего клика осталось:</h2>
+            <article class="flex flex-row items-end gap-1.5">
+                <article class="flex flex-row">
+                    <p class="p1 text-3xl font-semibold"></p>
+                    <p class="text-3xl font-semibold">,</p>
+                    <p class="p2 text-3xl font-semibold">9</p>
+                </article>
+                <p class="font-semibold text-lg">секунд</p>
+            </article>
+        </span>    
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
